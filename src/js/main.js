@@ -27,10 +27,20 @@ mascotasVeterinario.forEach(mascota => {
     <li class="list-group-item">Edad: ${mascota.edadMascota}</li>
     <li class="list-group-item">Peso: ${mascota.pesoMascota}</li>
     <li class="list-group-item">Estado: ${mascota.estadoMascota}</li>
-    <li class="list-group-item">Dueño: ${mascota.propietarioMascota}</li>
+    <li class="list-group-item">Dueño: ${mascota.propietarioMascota.nombreDueñoMascota}</li>
   </ul>
 </div>`
 });
 
+const porro = document.querySelector("#porro")
+const porroContainer = document.querySelector("#container-porro")
+
+porro.addEventListener("change", function() {
+  if(this.checked){
+    porroContainer.innerHTML += `<img src= "https://i.pinimg.com/564x/62/0c/af/620cafa43a565967e798cec88dfbfe63.jpg" class="card-img-top w-100 h-100" alt="...">`
+  }else {
+    porroContainer.innerHTML
+  }
+})
 
 
