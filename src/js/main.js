@@ -1,4 +1,5 @@
 const main = document.querySelector("main")
+const contenedor = document.querySelector("#contenedor-cards");
 
 main.classList.add("d-flex","flex-wrap","gap-5","justify-content-center")
 
@@ -14,7 +15,7 @@ mascotasVeterinario.forEach(mascota => {
 });
 
 mascotasVeterinario.forEach(mascota => {
-  main.innerHTML += 
+  contenedor.innerHTML += 
   `<div class="card" style="width: 18rem;">
   <img src=${mascota.link} class="card-img-top w-100 h-100" alt="...">
   <div class="card-body">
@@ -31,22 +32,5 @@ mascotasVeterinario.forEach(mascota => {
 </div>`
 });
 
-const boton = document.querySelector('#boton');
 
-boton.addEventListener('click', () => {
-  main.innerHTML =
-  `<div class="card" style="width: 18rem;">
-  <img src= class="card-img-top w-100 h-100" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Nombre:  </h5>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Especie: </li>
-    <li class="list-group-item">Raza: </li>
-    <li class="list-group-item">Edad: </li>
-    <li class="list-group-item">Peso: </li>
-    <li class="list-group-item">Estado: </li>
-    <li class="list-group-item">Dueño: </li>
-  </ul>
-</div>`
-})
+
