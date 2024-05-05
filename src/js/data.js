@@ -149,4 +149,19 @@ let mascotasVeterinario = [
           correoDueñoMascota: "cele@gmail.com"
       }
   },
+  {
+    nombreMascota: "melaza",
+    especieMascota: "canino",
+    razaMascota: "chandoso",
+    edadMascota: 4,
+    pesoMascota: "16 kilos",
+    estadoMascota: "estable",
+    link: './public/img/miel.jpg',
+    propietarioMascota: {
+        nombreDueñoMascota: "liliana quinchia",
+        identificacionDueñoMascota: "123556560",
+        telefonoDueñoMascota: "3254563461",
+        correoDueñoMascota: "valentina@gmail.com"
+    }
+}
 ]

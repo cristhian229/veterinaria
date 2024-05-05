@@ -22,11 +22,12 @@
 </head>
 
 <body>
-  <header class="position-fixed top-0 w-100 z-2">
+ <!------------------------- header -->
 
+  <header class="position-fixed top-0 w-100 z-2" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary ">
       <div class="container-fluid mx-5 px-5">
-        <a class="navbar-brand" href="#">Veterinaria Riwi</a>
+        <a class="navbar-brand" href="#inicio">Veterinaria Riwi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,60 +35,82 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#inicio">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#adopciones">Adopciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#guarderia">Guarderia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactanos">Reservas</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+<!------------------------------ main -->
+
   <main>
-    <section class="portada d-flex justify-content-center align-items-center">
-      <div class="card mb-3" style="max-width: 600px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/005/520/216/non_2x/cartoon-drawing-of-a-veterinarian-vector.jpg"
-              class="img-fluid rounded-start " alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Revision Gratuita</h5>
-              <p class="card-text">Ven y trae a tu compañero fiel para una revision completa totalmente gratis</p>
-              <p class="card-text"><small class="text-body-secondary">Aplica terminos y condiciones</small></p>
-            </div>
-          </div>
-        </div>
+    <section class="portada d-flex flex-column justify-content-center align-items-center" id="inicio">
+      <div class="container textos">
+        <h1>Revision gratuita</h1>
+        <h2>Ven y trae a tu compañero fiel para una revision <br> completa totalmente gratis</h2>
       </div>
     </section>
-    <section class="adopta d-flex flex-column justify-content-center align-items-center gap-5">
+    <section class="adopta d-flex flex-column justify-content-center align-items-center gap-5" id="adopciones">
       <h2>Adopta a alguno de nuestros peluditos!</h2>
       <div class="d-flex flex-wrap flex-row gap-5 justify-content-center" id="contenedor-cards">
         <div class="card " style="width: 18rem">
           <img
-            src="https://img.freepik.com/vector-premium/icono-marco-fotos-foto-vacia-blanco-vector-sobre-fondo-transparente-aislado-eps-10_399089-1290.jpg"
+            src="./public/img/pug.jpg"
             class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Nombre:</h5>
+            <h5 class="card-title">Nombre: maxi paxi</h5>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Especie:</li>
-            <li class="list-group-item">Raza:</li>
-            <li class="list-group-item">Edad:</li>
-            <li class="list-group-item">Peso:</li>
-            <li class="list-group-item">Estado:</li>
-            <li class="list-group-item">Dueño:</li>
+            <li class="list-group-item">Especie: canino</li>
+            <li class="list-group-item">Raza: pug</li>
+            <li class="list-group-item">Edad: 6</li>
+            <li class="list-group-item">Peso: 8 kilos</li>
+            <li class="list-group-item">Estado: melo</li>
+            <li class="list-group-item">Dueño: mariana rodriguez</li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="datos container-sm">
+ <!--------------------- section guarderia -->
+
+    <div class="container text-center gap-5 d-grid" id="guarderia">
+      <h2>Guarderia canina Medellin</h2>
+      <div class="row ">
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2021/07/Piscina.webp" class="rounded" alt="">
+        </div>
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2024/04/Guarderia-canina-112.webp" class="rounded" alt="">
+        </div>
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2024/04/Guarderia-canina-113.webp" class="rounded" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2021/06/Guarderia-canina-7.webp" class="rounded" alt="">
+        </div>
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2022/05/Foto-1-scaled.webp" class="rounded" alt="">
+        </div>
+        <div class="col">
+          <img src="https://clubdelcanino.com/wp-content/uploads/2020/07/Guarderia-canina-4.jpg" class="rounded" alt="">
+        </div>
+      </div>
+    </div>
+<!------------------------ section datos -->
+
+    <section class="datos container-sm" id="contactanos">
       <form>
         <div class="mb-3">
           <input type="text" class="form-control" name="nombre-completo" placeholder="Nombre Completo">
@@ -107,7 +130,7 @@
           <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
           <label class="form-check-label" for="flexSwitchCheckChecked">Desea recibir mas informacion al correo</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Reserva</button>
       </form>
       <div class="form-check form-switch my-5" id="container-porro" >
         <input class="form-check-input" type="checkbox" role="switch" id="porro" >
@@ -118,12 +141,12 @@
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Adopciones</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Perros</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Guarderia</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contactanos</a></li>
     </ul>
-    <p class="text-center text-body-secondary">&copy; 2024 Company, Inc</p>
+    <p class="text-center text-body-secondary">&copy; 2024 veterinaria Riwi, Inc <br><i class="bi bi-twitter-x"></i><i class="bi bi-instagram"></i><i class="bi bi-facebook"></i></p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

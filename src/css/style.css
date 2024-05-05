@@ -17,15 +17,31 @@
 }
 
 .portada {
-  background-image: url(https://r4.wallpaperflare.com/wallpaper/993/967/687/dog-4k-hd-desktop-background-wallpaper-78063d98c0005c48009cc17ee84224aa.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.182), rgba(5, 7, 12, 0.15)), url(https://r4.wallpaperflare.com/wallpaper/993/967/687/dog-4k-hd-desktop-background-wallpaper-78063d98c0005c48009cc17ee84224aa.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: auto;
   height: 90vh;
 }
+.portada h1{
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
 
+}
+.portada h2{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
 main{
   display: flex;
   flex-direction: column;
+}
+
+.col img{
+  width: 100%;
+  height: 100%;
 }
