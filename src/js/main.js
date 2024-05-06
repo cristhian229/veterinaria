@@ -37,9 +37,9 @@ const porroContainer = document.querySelector("#container-porro")
 
 porro.addEventListener("change", function() {
   if(this.checked){
-    porroContainer.innerHTML += `<img src= "https://i.pinimg.com/564x/62/0c/af/620cafa43a565967e798cec88dfbfe63.jpg" class="card-img-top w-100 h-100" alt="...">`
+    porroContainer.innerHTML = `<img src= "https://i.pinimg.com/564x/62/0c/af/620cafa43a565967e798cec88dfbfe63.jpg" class="card-img-top w-100 h-100" alt="...">`
   }else {
-    porroContainer.innerHTML
+    porroContainer.innerHTML = ""
   }
 })
 
